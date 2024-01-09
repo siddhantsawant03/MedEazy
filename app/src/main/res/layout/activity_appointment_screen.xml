@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_bg"
+    tools:context=".AppointmentScreen">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="-18dp"
+        android:background="#0AB011EA"
+        android:src="@drawable/backbtn_foreground"/>
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/patient_login_button_bg"
+        android:padding="5dp"
+        android:src="@drawable/appointmentlogo"/>
+
+    <TextView
+        android:id="@+id/tv_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book an Appointment"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextDoctorName"
+        android:gravity="center"
+        android:inputType="text"
+        android:hint="Doctor's Name"
+        android:background="@drawable/patient_login_button_bg"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/tv_book"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextDateTime"
+        android:gravity="center"
+        android:hint="Date and Time"
+        android:background="@drawable/patient_login_button_bg"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/editTextDoctorName"/>
+
+    <Button
+        android:id="@+id/scheduleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Schedule Appointment"
+        android:backgroundTint="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editTextDateTime"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btnDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doctors Available"
+        android:layout_marginTop="650dp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/logout_btn"/>
+
+    <FrameLayout
+        android:layout_width="600dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="760dp"
+        android:background="@color/bgblue"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_home"
+        android:id="@+id/nav"/>
+
+
+
+</RelativeLayout>

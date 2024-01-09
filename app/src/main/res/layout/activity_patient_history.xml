@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_bg"
+    tools:context=".PatientHistory">
+
+    <FrameLayout
+        android:layout_width="600dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="760dp"
+        android:background="@color/bgblue"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_home"
+        android:id="@+id/nav"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medical History"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/patient_login_button_bg"/>
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="-18dp"
+        android:background="#0AB011EA"
+        android:src="@drawable/backbtn_foreground"/>
+
+    <TextView
+        android:id="@+id/illnessInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/patient_login_button_bg"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="Do you have Asthma?"
+        android:layout_marginBottom="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/illnessRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:padding="3dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/patient_login_button_bg"
+        android:layout_below="@id/illnessInput"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/illnessYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:checked="false"/>
+
+        <RadioButton
+            android:id="@+id/illnessNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:checked="false"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/diabetesInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do you have diabetes?"
+        android:background="@drawable/patient_login_button_bg"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/illnessRadioGroup"
+        android:layout_marginBottom="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/diabetesRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/patient_login_button_bg"
+        android:layout_marginTop="10dp"
+        android:padding="3dp"
+        android:layout_below="@id/diabetesInput"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/diabetesYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:checked="false"/>
+
+        <RadioButton
+            android:id="@+id/diabetesNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:checked="false"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/allergiesInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do you have any allergies?"
+        android:background="@drawable/patient_login_button_bg"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/diabetesRadioGroup"
+        android:layout_marginBottom="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/allergiesRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:padding="3dp"
+        android:background="@drawable/patient_login_button_bg"
+        android:layout_below="@id/allergiesInput"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/allergiesYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:checked="false"/>
+
+        <RadioButton
+            android:id="@+id/allergiesNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:checked="false"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/allergiesRadioGroup"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/logout_btn"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="25dp"
+        android:text="Save"/>
+
+    <Button
+        android:id="@+id/downloadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/allergiesRadioGroup"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/logout_btn"
+        android:layout_toRightOf="@id/saveButton"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="25dp"
+        android:text="Download"/>
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@drawable/new_bg"
+    tools:context=".Gethelp">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="-20dp"
+        android:background="#0AB011EA"
+        android:src="@drawable/backbtn_foreground"/>
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/white_background"
+        android:layout_marginTop="-25dp"
+        android:src="@drawable/get_help" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Help!"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et1"
+        android:hint="Enter name"
+        android:padding="10dp"
+        android:background="@drawable/get_help_edittext"
+        android:textSize="20sp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="30dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et2"
+        android:hint="Enter phone number"
+        android:padding="10dp"
+        android:background="@drawable/get_help_edittext"
+        android:textSize="20sp"
+        android:layout_marginBottom="30dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et3"
+        android:padding="10dp"
+        android:hint="Subject"
+        android:background="@drawable/get_help_edittext"
+        android:textSize="20sp"
+        android:layout_marginBottom="30dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et4"
+        android:padding="10dp"
+        android:hint="Enter the issue you are facing"
+        android:background="@drawable/get_help_edittext"
+        android:textSize="20sp"
+        android:layout_marginBottom="30dp"
+        />
+
+    <Button
+        android:onClick="submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn1"
+        android:text="Submit"
+        android:backgroundTint="#5832ca"
+        android:textSize="20sp"
+        android:padding="9dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

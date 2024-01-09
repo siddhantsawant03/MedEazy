@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_bg"
+    tools:context=".About">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="-18dp"
+        android:background="#0AB011EA"
+        android:src="@drawable/backbtn_foreground"
+        tools:ignore="MissingConstraints" />
+
+    <FrameLayout
+        android:layout_width="600dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="760dp"
+        android:background="@color/bgblue"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_home"
+        android:id="@+id/nav"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/applogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="300dp"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="420dp"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.1.1"
+        android:textStyle="italic"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/patient_login_button_bg"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="470dp"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:padding="5dp"
+        android:backgroundTint="@color/white"
+        android:textStyle="italic"
+        android:background="@drawable/patient_login_button_bg"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="A healthcare app made for making lives of patients who take constant medications easy."/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_bg"
+    tools:context=".PatientActivity">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="-18dp"
+        android:background="#0AB011EA"
+        android:src="@drawable/backbtn_foreground"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textColor="@color/black"
+        android:background="@drawable/patient_login_button_bg"
+        android:backgroundTint="@color/white"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:textSize="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <FrameLayout
+        android:layout_width="600dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="760dp"
+        android:background="@color/bgblue"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_home"
+        android:id="@+id/nav"/>
+
+    <!-- Button 1 -->
+    <RelativeLayout
+        android:id="@+id/layout_btn1"
+        android:layout_width="177dp"
+        android:layout_height="180dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp">
+
+        <ImageButton
+            android:id="@+id/btn1"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:background="@drawable/main_screen_button"
+            android:backgroundTint="@color/white"
+            android:padding="35dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/consult_doc_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Consult Doctor"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="120dp"
+            />
+
+    </RelativeLayout>
+
+    <!-- Button 2 -->
+    <RelativeLayout
+        android:id="@+id/layout_btn2"
+        android:layout_width="170dp"
+        android:layout_height="158dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="200dp">
+
+        <ImageButton
+            android:id="@+id/btn2"
+            android:layout_width="175dp"
+            android:layout_height="150dp"
+            android:background="@drawable/main_screen_button"
+            android:backgroundTint="@color/white"
+            android:padding="35dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/medical_reminder" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:text="Medical Reminder"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- Button 3 -->
+    <RelativeLayout
+        android:id="@+id/layout_btn3"
+        android:layout_width="170dp"
+        android:layout_height="180dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="370dp">
+
+        <ImageButton
+            android:id="@+id/btn3"
+            android:layout_width="175dp"
+            android:layout_height="150dp"
+            android:background="@drawable/main_screen_button"
+            android:backgroundTint="@color/white"
+            android:padding="35dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/medical_history"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Medical History"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginTop="120dp"
+            />
+    </RelativeLayout>
+
+    <!-- Button 4 -->
+    <RelativeLayout
+        android:id="@+id/layout_btn4"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="370dp">
+
+        <ImageButton
+            android:id="@+id/btn4"
+            android:layout_width="175dp"
+            android:layout_height="100dp"
+            android:background="@drawable/main_screen_button"
+            android:backgroundTint="@color/white"
+            android:padding="14dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/update_logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="100dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:text="Edit Profile"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- Button 5 -->
+    <RelativeLayout
+        android:id="@+id/layout_btn5"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="450dp">
+
+        <ImageButton
+            android:id="@+id/btn5"
+            android:layout_width="175dp"
+            android:layout_height="100dp"
+            android:background="@drawable/main_screen_button"
+            android:backgroundTint="@color/white"
+            android:padding="14dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/customer_care"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="100dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:text="Get Help"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>
